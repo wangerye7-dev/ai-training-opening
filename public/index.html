@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#07101f" />
+    <title>AI教师能力现场共创</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="mobile-page">
+    <div class="ambient ambient-a"></div>
+    <div class="ambient ambient-b"></div>
+    <main class="mobile-shell">
+      <header class="mobile-brand">
+        <span class="brand-mark"><i></i> AI IN ACTION</span>
+        <span class="brand-meta">VOCATIONAL EDUCATION · 2026</span>
+      </header>
+
+      <section class="mobile-hero">
+        <p class="section-index">OPENING · 01</p>
+        <h1>今天，最希望<br /><em>AI</em> 帮你完成什么？</h1>
+        <p>匿名参与 · 30秒完成 · 结果实时汇入会场大屏</p>
+      </section>
+
+      <form id="opening-form" class="glass-card form-card">
+        <div class="question-row">
+          <div>
+            <span>SELECT A SCENARIO</span>
+            <h2>选择一个最想突破的场景</h2>
+          </div>
+          <b>01 / 03</b>
+        </div>
+        <div id="option-list" class="premium-options" aria-live="polite"></div>
+
+        <div class="tool-block">
+          <div class="question-row compact">
+            <div>
+              <span>AI TOOL PROFILE</span>
+              <h2>目前使用过哪些AI工具？</h2>
+            </div>
+            <b>02 / 03</b>
+          </div>
+          <p class="optional-tip">可多选 · 选填</p>
+          <div id="tool-list" class="tool-chips"></div>
+        </div>
+
+        <div class="sentence-block">
+          <div class="question-row compact">
+            <div>
+              <span>ONE-LINE EXPECTATION</span>
+              <h2>用一句话补充你的期待</h2>
+            </div>
+            <b>03 / 03</b>
+          </div>
+          <textarea id="sentence" maxlength="60" rows="3" placeholder="例如：帮我把一节课改造成真实岗位任务"></textarea>
+          <div class="input-meta"><span>选填，不要填写敏感信息</span><strong><i id="char-count">0</i>/60</strong></div>
+        </div>
+
+        <p id="form-message" class="form-message" role="alert"></p>
+        <button class="glow-button" type="submit"><span>提交我的期待</span><i>→</i></button>
+      </form>
+
+      <section id="success-card" class="glass-card success-card hidden" aria-live="polite">
+        <div class="success-ring"><span>✓</span></div>
+        <p class="section-index">RESPONSE RECEIVED</p>
+        <h2>你的声音，已汇入现场</h2>
+        <p>请抬头查看大屏，看看大家共同关注的方向。</p>
+      </section>
+
+      <footer class="mobile-footer">高职院校教师AI应用培训 · OPENING INTERACTION</footer>
+    </main>
+    <script src="./form.js"></script>
+  </body>
+</html>
