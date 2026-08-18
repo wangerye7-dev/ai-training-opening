@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#07101f" />
+    <title>AI教师能力现场共创 · 实时大屏</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="stage-page">
+    <div class="stage-grid-bg"></div>
+    <div class="ambient stage-ambient-a"></div>
+    <div class="ambient stage-ambient-b"></div>
+
+    <main class="stage-shell">
+      <header class="stage-header">
+        <div>
+          <div class="live-line"><span class="live-dot"></span> LIVE INTERACTION <i></i> 高职院校教师AI应用培训</div>
+          <h1>AI教师能力<span>现场共创</span></h1>
+          <p>今天，大家最希望 AI 帮助完成什么？</p>
+        </div>
+        <div class="participation-card">
+          <span>PARTICIPANTS</span>
+          <strong id="total-count">0</strong>
+          <em>人已参与</em>
+        </div>
+      </header>
+
+      <section class="stage-content">
+        <aside class="glass-panel qr-panel">
+          <div class="panel-kicker"><b>01</b><span>SCAN TO JOIN</span></div>
+          <h2>扫码进入现场共创</h2>
+          <div class="qr-frame">
+            <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+            <div id="qr-image" class="qr-image" aria-label="手机填写页二维码"></div>
+          </div>
+          <p id="form-url" class="public-url">正在生成公网地址……</p>
+          <div class="network-badge"><span>●</span> 任意网络均可访问</div>
+        </aside>
+
+        <section class="glass-panel chart-panel">
+          <div class="panel-title-row">
+            <div>
+              <div class="panel-kicker"><b>02</b><span>LIVE INSIGHT</span></div>
+              <h2>全场需求热度</h2>
+            </div>
+            <div id="leader-card" class="leader-card"><span>当前关注最高</span><strong>等待参与</strong></div>
+          </div>
+          <div id="bar-list" class="premium-bars"></div>
+        </section>
+
+        <section class="glass-panel voice-panel">
+          <div class="panel-title-row">
+            <div>
+              <div class="panel-kicker"><b>03</b><span>AUDIENCE PROFILE</span></div>
+              <h2>现场AI使用画像</h2>
+            </div>
+            <div class="refresh-chip"><span></span> 实时更新</div>
+          </div>
+          <div class="insight-split">
+            <div class="tool-profile">
+              <h3>常用AI工具</h3>
+              <div id="tool-profile-list" class="tool-profile-list"><p class="empty-state">等待选择……</p></div>
+            </div>
+            <div class="voice-profile">
+              <h3>一句话期待</h3>
+              <div id="sentence-cloud" class="premium-cloud">
+                <p class="empty-state">等待第一条现场声音……</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <footer class="stage-footer">
+        <div class="opening-copy"><span>OPENING</span><p><strong>开场衔接：</strong>大家的选择已经很清楚。今天我们不追求学会所有工具，而是从真实工作中选择一个小场景，完成一次可用的结果。</p></div>
+        <div class="stage-actions">
+          <button id="export-button" type="button">导出结果</button>
+          <button id="reset-button" class="danger" type="button">清空重来</button>
+        </div>
+      </footer>
+    </main>
+
+    <script src="./qrcode.min.js"></script>
+    <script src="./dashboard.js"></script>
+  </body>
+</html>
